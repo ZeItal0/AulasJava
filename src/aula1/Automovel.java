@@ -3,16 +3,30 @@ package aula1;
 public class Automovel {
     String modelo;
     String cor;
-    int velocidade = 0;
+    String ano;
+    int velocidade;
     boolean isUsado;
 
-    void acelerar() {
-        velocidade = velocidade + 1;
+    boolean meuCarroEUsado(){
+        return isUsado;
     }
-    void parar(){
-        velocidade = 0;
+
+    int qualMinhaVelocidade(){
+        return velocidade;
     }
-    void reduzir(){
-        velocidade = velocidade - 1;
+
+    void acelerar(int novaVelocidade) {
+        velocidade = velocidade + novaVelocidade;
+    }
+
+    void qualMeuCarro(String ModeloCarro, String corCarro, String anoCarro){
+        modelo = ModeloCarro;
+        cor = corCarro;
+        ano = anoCarro;
+    }
+
+
+    void reduzir(int novaVelocidade){
+        velocidade = novaVelocidade;
     }
 }
