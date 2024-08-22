@@ -7,13 +7,16 @@ public class aula0 {
 
         int value1 = 10;
         int value2 = 10;
+        int value3 = -10;
 
-        boolean isMaiorDeIdade;
-        double saldo;
+        boolean isMaiorDeIdade = false;
+        double saldo = 4.65634;
 
 //        GITHUB
         System.out.println(name + " " + lastName);
-        System.out.println(value1 + value2);
+        System.out.println(value1 + value2 - value3);
+        System.out.println(isMaiorDeIdade + "," + saldo);
+        
 
     }
 }

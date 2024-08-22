@@ -3,48 +3,34 @@ package aula1;
 public class aula1 {
     public static void main(String[] args){
         Automovel carro = new Automovel();
-        carro.modelo = "Ford";
-        carro.velocidade = 50;
-//        carro.acelerar(50);
-////        System.out.println(" Impressão 1 -> " + carro.velocidade);
-//
-//        carro.reduzir(30);
-////        System.out.println(" Impressão 2 -> " + carro.velocidade);
-//
-//
-//        carro.qualMeuCarro("Celta", "Azul", "1980");
-//        System.out.println(carro.cor + " , " + carro.modelo);
+        carro.nome  = "Corsa";
+        carro.velocidade = 0;
+        int mudancaDeVelocidade = 0;
+        
+        
+       mudancaDeVelocidade =  carro.acelerar(mudancaDeVelocidade);
+       System.out.println("Carro:" + carro.nome + " Primeira Velocidade ->" + mudancaDeVelocidade + " Km/h");
+        
+       mudancaDeVelocidade = mudancaDeVelocidade + 10;
+       mudancaDeVelocidade =  carro.acelerar(mudancaDeVelocidade);
+       System.out.println("Carro:" + carro.nome + " Segunda Velocidade -> " + mudancaDeVelocidade + " Km/h");
+       mudancaDeVelocidade =  carro.acelerar(mudancaDeVelocidade);
+        
+        carro.qualVelocidade();
+        System.out.println(" Velocidade atual -> " + carro.qualVelocidade() + " Km/h");
+        
+        mudancaDeVelocidade =  carro.reduzir(mudancaDeVelocidade);
+        System.out.println("Carro:" + carro.nome + " Segunda Velocidade -> " + mudancaDeVelocidade + " Km/h");
+        
+        carro.qualMeuCarro("Corsa","Preto","2001","chevrolet");
+        System.out.println("Caracteristicas do carro -> "+carro.nome +", "+ carro.cor +", "+ carro.ano +", "+ carro.modelo);
+        
 
+        Automovel moto;
+        moto = new Automovel();
 
+        // GITHUB
 
-//        System.out.println(" Impressão 1 -> " +carro.velocidade);
-//        carro.acelerar(50);
-//        System.out.println(" Impressão 2 -> " + carro.velocidade);
-//
-////        int velocidadeCarro = carro.qualMinhaVelocidade();
-//
-//        System.out.println(" Impressão 3 -> " + carro.qualMinhaVelocidade());
-
-
-
-//
-//        Automovel moto;
-//        moto = new Automovel();
-//
-//        // GITHUB
-//
-//        carro.reduzir();
-//        System.out.println(carro.modelo);
-
-        Calculadora cal = new Calculadora();
-        double resultado = cal.somar(10, 2);
-        System.out.println(resultado);
-
-
-        cal.subtracao(10, 2);
-        double resultado2 = cal.valorUm;
-        System.out.println(resultado2);
-
-
+    
     }
 }
