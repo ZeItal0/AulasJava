@@ -24,11 +24,6 @@ public class aula1 {
         
         carro.qualMeuCarro("Corsa","Preto","2001","chevrolet");
         System.out.println("Caracteristicas do carro -> "+carro.nome +", "+ carro.cor +", "+ carro.ano +", "+ carro.modelo);
-        
-
-        Automovel moto;
-        moto = new Automovel();
-
         // GITHUB
 
     
