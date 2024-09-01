@@ -4,7 +4,6 @@ public class Object {
 
 	public static void main(String[] args) {
 		Functions bucket = new Functions();
-		
 		bucket.Situation = "The bucket is empty";
 		bucket.Capacity = 64.31;
 		bucket.AmontOfWater = 0;

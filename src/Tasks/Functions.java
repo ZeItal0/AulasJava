@@ -27,12 +27,4 @@ public class Functions {
 	void bucketColor () {
 		Color = "Blue";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 }
