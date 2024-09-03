@@ -1,0 +1,9 @@
+
+1 - Escreva um algoritmo que mostre na tela os números	de 1 a 50. Utilize o  comando de repetição Enquanto (While).
+2 - Escreva um algoritmo que mostre na tela os números	de 1 a 50. Utilize o  comando de repetição Para (For).
+3 - Imprima na tela os números pares de 1 a 50 utilizando a repetição For
+4 - Imprima na tela os números impares de 1 a 50 utilizando a repetição While
+
+5 - Cri um array de 10 posições e imprima as posições maiores que o valor 3 utilazando For
+6 - Cria um arrayList com 5 nomes, remove o segundo nome, imprima todos, depois remova o 3,
+imprima os valores, e valide se a primeira posição o nome da pessoa é Talles.
