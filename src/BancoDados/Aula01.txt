@@ -1,0 +1,36 @@
+create table cliente (
+    id integer not null AUTO_INCREMENT primary key,
+    nome varchar(60),
+    cpf varchar(14)
+)
+create table pedido(
+    id integer,
+    nome varchar(5),
+    id_cliente integer,
+    primary key(id),
+    foreign key(id_cliente) references
+    cliente(id)
+)
+-----------------------------------------------------------------
+
+create table produto (
+    id integer AUTO_INCREMENT primary key,
+    nome varchar(60),
+    descricao varchar(100),
+    valor DECIMAL(10, 2)
+)
+
+create table pedido (
+    id integer AUTO_INCREMENT primary key,
+    nome varchar(60),
+    codigo varchar(10),
+    valor DECIMAL(10, 2)
+)
+
+create table produto_pedido(
+    id_produto integer,
+    id_pedido integer,
+    primary key(id_produto, id_pedido),
+    FOREIGN KEY (id_produto) REFERENCES produto(id),
+    FOREIGN KEY (id_pedido) REFERENCES pedido(id)
+)
