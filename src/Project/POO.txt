@@ -1,0 +1,81 @@
+- Todas as entidades devem conter no mínimo( 1 contrutor, 5 atributos encapsulados com gets and settrs)
+- Todos os projetos devem conter ( Herança, Ifs, for, arrays, encapsulamento, construtor ...)
+- Tudo precisa ter validação de dados.
+- Deve existir apenas 1 classe main, que gere tudo o que foi solicitado.
+- Todas as entidades precisam ter dados.
+- Sistema deve ter lógica.
+- Não economizem nos atributos, isso deve ter lógica para não ter entidade com 1 atributo, entidade que podem ter varios atributos e não tem, é um problema.
+
+
+Resultados dos grupos {
+    Breno       -> 1
+    Taina       -> 2
+    Lucas       -> 3
+    Jamille     -> 4
+    Jhonata     -> 5
+    Claudivan   -> 6
+    Audri       -> 7
+    Jp          -> 8
+    Italo       -> 9
+    Kelvin      -> 10
+}
+
+
+1. Sistema de Gerenciamento de Funcionários e Departamentos
+Descrição: Sistema que cadastra funcionários, seus cargos, departamentos e projetos em que trabalham.
+Entidades: Funcionário, Departamento, Projeto.
+Estruturas lógicas: Verificação do prazo de projetos e vinculação de funcionários a departamentos.
+
+
+2. Sistema de Reserva de Hotel com Múltiplos Serviços
+Descrição: Sistema para reservas de hotel que inclui cadastro de clientes, quartos e serviços adicionais (como spa e café da manhã).
+Entidades: Cliente, Quarto, Reserva, Serviço.
+Estruturas lógicas: Verificação de disponibilidade de quartos, se o quarto estiver ocupado, avisar quem está ocupando e totalização de serviços.
+
+
+3. Sistema de Gerenciamento Acadêmico
+Descrição: Sistema para gerenciar alunos, professores, disciplinas e matrículas.
+Entidades: Aluno, Professor, Disciplina, Matrícula.
+Estruturas lógicas: Controle de notas e frequência.
+
+
+4. Aplicativo de Controle Financeiro com Categorias
+Descrição: Aplicativo para registrar receitas e despesas, categorizadas por tipo (alimentação, transporte, lazer), com relatórios.
+Entidades: Transação, Categoria, Usuário.
+Estruturas lógicas: Relatórios mensais com totalizações e alertas de limite.
+
+
+5. Sistema de Gerenciamento de Consultas com Especialidades
+Descrição: Sistema para gerenciar consultas médicas, registrando pacientes, médicos e especialidades.
+Entidades: Paciente, Médico, Consulta, Especialidade.
+Estruturas lógicas: Verificação de disponibilidade de médicos, mostrar qual consulta está com qual médico.
+
+
+6. Sistema de Gerenciamento de Restaurante com Cardápio e Pedidos
+Descrição: Sistema que gerencia um restaurante, cadastrando clientes, mesas, pratos do cardápio e pedidos.
+Entidades: Cliente, Mesa, Pedido, Prato.
+Estruturas lógicas: Cálculo do total do pedido e disponibilidade de mesas, e a mesa com qual cliente está.
+
+
+7. Sistema de Aluguel de Veículos com Vários Tipos de Carros
+Descrição: Sistema para aluguel de carros com cadastro de clientes, veículos e contratos de locação.
+Entidades: Cliente, Veículo, Contrato.
+Estruturas lógicas: Cálculo de valor de locação baseado no tempo de uso, qual cliente tem locacao e qual não tem.
+
+
+8. Sistema de Supermercado com Estoque e Caixa
+Descrição: Sistema para gerenciar produtos em estoque, registro de compras e controle de caixa.
+Entidades: Produto, Cliente, Carrinho, Caixa.
+Estruturas lógicas: Verificação de estoque e cálculo de troco.
+
+
+9. Aplicativo de Gerenciamento de Projetos
+Descrição: Sistema que permite gerenciar projetos, equipes, tarefas e prazos.
+Entidades: Projeto, Equipe, Tarefa, Membro.
+Estruturas lógicas: Verificação de prazos e progresso do projeto, qual projeto maior, e mostrar qual equipe está com qual projeto.
+
+
+10. Sistema de Controle de Animais com Vacinação e Tratamentos
+Descrição: Sistema que gerencia animais de estimação, seus donos, tratamentos e vacinas.
+Entidades: Animal, Dono, Tratamento, Vacina.
+Estruturas lógicas: Controle de vacinação e histórico de tratamento, e exibir qual animal tem dono, qual não tem.
