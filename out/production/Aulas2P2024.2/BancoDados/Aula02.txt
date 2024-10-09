@@ -1,0 +1,25 @@
+alter table cliente add email varchar(255)
+
+alter table cliente drop email
+
+drop table cliente
+
+drop from cliente
+
+INSERT INTO CLIENTE (nome, cpf, email)
+            VALUES  ("tALLES", "000.",'gmail.com')
+
+
+
+
+select * from cliente
+WHERE nome like '%Talles%' and cpf = '000.' and
+idade >= 18 and sexo = 'Masculino'
+
+select * from produtos where name like "%Sap%";
+
+create table clientes(
+name varchar(255),
+idade integer,
+email varchar(255)
+);

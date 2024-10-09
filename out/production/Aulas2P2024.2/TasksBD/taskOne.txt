@@ -1,0 +1,30 @@
+Crie as seguintes tabelas:
+
+livros:
+    id (chave primária, autoincremental)
+    titulo (texto)
+    autor (texto)
+    editora (texto)
+    ano_publicacao (inteiro)
+    preco (decimal)
+clientes:
+    id (chave primária, autoincremental)
+    nome (texto)
+    email (texto)
+    endereco (texto)
+pedidos:
+    id (chave primária, autoincremental)
+    id_cliente (chave estrangeira referenciando a tabela clientes)
+    data_pedido (data)
+    total (decimal)
+Questão:
+
+Crie as três tabelas: Utilize o comando CREATE TABLE para criar as tabelas com as colunas especificadas,
+incluindo as chaves primárias e estrangeiras.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2 - Criar as tabelas do projeto apresentado em Sala,
+o projeto foi em grupo, mas essa questão não !
+
+Commits até 11/09 as 23:59

@@ -1,4 +1,4 @@
-package Tasks;
+package TasksPOO;
 
 
 public class People {

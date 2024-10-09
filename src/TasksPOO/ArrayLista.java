@@ -1,4 +1,4 @@
-package Tasks;
+package TasksPOO;
 
 import java.util.ArrayList;
 
