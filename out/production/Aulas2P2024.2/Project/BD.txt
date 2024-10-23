@@ -1,0 +1,27 @@
+Estrutura do Desafio:
+1 - Tema Livre:
+Ex:
+    Educação (sistema de gerenciamento escolar, biblioteca, cursos).
+    Saúde (sistema de prontuários médicos, farmácia, clínicas).
+
+2 - Requisitos mínimos do projeto:
+
+    Entidades: Criar no mínimo 12 entidades com atributos coerentes e relacionados ao setor escolhido.
+    Relacionamentos: Incluir relacionamentos 1:1, 1:N e N:N entre as entidades.
+    Integridade: Incluir restrições como UNIQUE e NOT NULL quando necessário.
+    Consultas minímas de 25 diferentes e coerentes com o tema.
+    Solicitar comandos UPDATE e DELETE com condições necessárias,
+    como alterar informações de um cliente com base em certos critérios ou excluir registros obsoletos.
+
+3 - Desafios de Consultas:
+
+    Criação de consultas para listar informações distintas e filtradas.
+    Realizar agregações e filtros complexos (WHERE, DISTINCT, LIMIT, ORDER BY, (and, or ...) )
+
+4 - Entregáveis:
+
+    Diagrama ER (Entidade-Relacionamento).
+    Script SQL contendo a criação das tabelas, inserção de dados e consultas exigidas.
+    Relatório explicando o sistema proposto, justificando as escolhas de entidades e relacionamentos.
+
+
