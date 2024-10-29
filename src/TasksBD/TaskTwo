@@ -1,0 +1,13 @@
+Criar o diagrama completo com todas as tabelas, relacionamentos e atributos.
+não precisa ser em sql, pode ser como exemplo abaixo
+
+Restaurante(
+    id int
+    nome varchar
+    descricao
+    ...
+)
+
+Commits validos até 22/10 as 23:59
+
+Lembrando da estrutura para commits
