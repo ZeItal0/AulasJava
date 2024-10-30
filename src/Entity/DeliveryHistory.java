@@ -2,26 +2,18 @@ package Entity;
 
 import java.util.Date;
 
-public class DeliveryHistory {
+public class DeliveryHistory extends Base{
 	
-	private int id;
+	
 	private DeliveryStatus deliveryStatus;
 	private Order order;
 	private Date date_time;
 	
-	public DeliveryHistory(int id, DeliveryStatus deliveryStatus, Order order, Date date_time) {
-		this.id = id;
+	public DeliveryHistory(DeliveryStatus deliveryStatus, Order order, Date date_time) {
+		
 		this.deliveryStatus = deliveryStatus;
 		this.order = order;
 		this.date_time = date_time;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public DeliveryStatus getDeliveryStatus() {

@@ -2,26 +2,18 @@ package Entity;
 
 import java.util.Date;
 
-public class PaymentHistory {
+public class PaymentHistory extends Base{
 
-	private int id;
+	
 	private Date payment_date;
 	private PaymentMethod paymentMethod;
 	private float value;
 	
-	public PaymentHistory(int id, Date payment_date, PaymentMethod paymentMethod, float value) {
-		this.id = id;
+	public PaymentHistory(Date payment_date, PaymentMethod paymentMethod, float value) {
+		
 		this.payment_date = payment_date;
 		this.paymentMethod = paymentMethod;
 		this.value = value;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public Date getPayment_date() {
@@ -47,6 +39,7 @@ public class PaymentHistory {
 	public void setValue(float value) {
 		this.value = value;
 	}
+	
 	
 	
 	

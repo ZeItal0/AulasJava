@@ -1,25 +1,17 @@
 package Entity;
 
-public class ProductOrder {
+public class ProductOrder extends Base{
 
-	private int id;
+	
 	private Order order;
 	private product product;
 	private int amount;
 	
-	public ProductOrder(int id, Order order, Entity.product product, int amount) {
-		this.id = id;
+	public ProductOrder(Order order, Entity.product product, int amount) {
+		
 		this.order = order;
 		this.product = product;
 		this.amount = amount;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public Order getOrder() {
@@ -45,6 +37,8 @@ public class ProductOrder {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
+	
+	
 	
 	
 	

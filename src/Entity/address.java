@@ -1,8 +1,7 @@
 package Entity;
 
-public class address {
+public class address extends Base{
 	
-	private int id;
 	private String road;
 	private String number;
 	private String city;
@@ -12,8 +11,8 @@ public class address {
 	private String complement;
 	private String address_type;
 	
-	public address(int id, String road, String number, String city, String state, String reference_point, int zip_code, String complement, String address_type) {
-		this.id = id;
+	public address(String road, String number, String city, String state, String reference_point, int zip_code,
+			String complement, String address_type) {
 		this.road = road;
 		this.number = number;
 		this.city = city;
@@ -22,14 +21,6 @@ public class address {
 		this.zip_code = zip_code;
 		this.complement = complement;
 		this.address_type = address_type;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getRoad() {
@@ -95,7 +86,6 @@ public class address {
 	public void setAddress_type(String address_type) {
 		this.address_type = address_type;
 	}
-	
 	
 	
 

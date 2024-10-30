@@ -1,27 +1,19 @@
 package Entity;
 
-public class product {
+public class product extends Base{
 
-	private int id;
+	
 	private String nome;
 	private float price;
 	private category category;
 	private restaurant restaurant;
 	
-	public product(int id, String nome, float price, Entity.category category, Entity.restaurant restaurant) {
-		this.id = id;
+	public product(String nome, float price, Entity.category category, Entity.restaurant restaurant) {
+		
 		this.nome = nome;
 		this.price = price;
 		this.category = category;
 		this.restaurant = restaurant;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getNome() {
@@ -55,5 +47,7 @@ public class product {
 	public void setRestaurant(restaurant restaurant) {
 		this.restaurant = restaurant;
 	}
+	
+	
 	
 }

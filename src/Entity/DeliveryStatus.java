@@ -1,21 +1,13 @@
 package Entity;
 
-public class DeliveryStatus {
+public class DeliveryStatus extends Base{
 
-	private int id;
-	private String name;
 	
-	public DeliveryStatus(int id, String name) {
-		this.id = id;
+	private String name;
+
+	public DeliveryStatus(String name) {
+		
 		this.name = name;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -25,6 +17,8 @@ public class DeliveryStatus {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 	
 	
 	

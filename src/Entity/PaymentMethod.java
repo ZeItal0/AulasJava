@@ -1,21 +1,13 @@
 package Entity;
 
-public class PaymentMethod {
+public class PaymentMethod extends Base{
 
-	private int id;
-	private String shape;
 	
-	public PaymentMethod(int id, String shape) {
-		this.id = id;
+	private String shape;
+
+	public PaymentMethod(String shape) {
+		
 		this.shape = shape;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getShape() {
@@ -25,6 +17,8 @@ public class PaymentMethod {
 	public void setShape(String shape) {
 		this.shape = shape;
 	}
+	
+	
 	
 	
 }

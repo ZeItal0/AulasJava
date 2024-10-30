@@ -1,25 +1,17 @@
 package Entity;
 
-public class category {
+public class category extends Base{
 	
-	private int id;
+
 	private String name;
 	private String description;
 	private String type_category;
 	
-	public category(int id, String name, String description, String type_category) {
-		this.id = id;
+	public category(String name, String description, String type_category) {
+		
 		this.name = name;
 		this.description = description;
 		this.type_category = type_category;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -45,6 +37,8 @@ public class category {
 	public void setType_category(String type_category) {
 		this.type_category = type_category;
 	}
+	
+	
 	
 	
 	

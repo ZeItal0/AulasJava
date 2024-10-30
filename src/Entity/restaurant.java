@@ -2,9 +2,9 @@ package Entity;
 
 import java.sql.Time;
 
-public class restaurant {
+public class restaurant extends Base {
 	
-	private int id;
+	
 	private String name;
 	private String telephone;
 	private Time opening_hours;
@@ -13,10 +13,9 @@ public class restaurant {
 	private boolean is_withdrawn;
 	private float minimumdelivery_value;
 	
-	public restaurant(int id, String name, String telephone, Time opening_hours, Entity.address address,
+	public restaurant(String name, String telephone, Time opening_hours, Entity.address address,
 			Entity.category category, boolean is_withdrawn, float minimumdelivery_value) {
-		
-		this.id = id;
+	
 		this.name = name;
 		this.telephone = telephone;
 		this.opening_hours = opening_hours;
@@ -24,14 +23,6 @@ public class restaurant {
 		this.category = category;
 		this.is_withdrawn = is_withdrawn;
 		this.minimumdelivery_value = minimumdelivery_value;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -89,7 +80,6 @@ public class restaurant {
 	public void setMinimumdelivery_value(float minimumdelivery_value) {
 		this.minimumdelivery_value = minimumdelivery_value;
 	}
-	
 	
 	
 	

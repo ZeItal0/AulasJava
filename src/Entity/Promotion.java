@@ -2,30 +2,22 @@ package Entity;
 
 import java.util.Date;
 
-public class Promotion {
+public class Promotion extends Base{
 
-	private int id;
+
 	private String name;
 	private String code;
 	private float value;
 	private Date validity;
 	private String type;
 	
-	public Promotion(int id, String name, String code, float value, Date validity, String type) {
-		this.id = id;
+	public Promotion(String name, String code, float value, Date validity, String type) {
+		
 		this.name = name;
 		this.code = code;
 		this.value = value;
 		this.validity = validity;
 		this.type = type;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -67,6 +59,7 @@ public class Promotion {
 	public void setType(String type) {
 		this.type = type;
 	}
+	
 	
 	
 }

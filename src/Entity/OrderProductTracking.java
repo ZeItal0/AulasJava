@@ -1,6 +1,6 @@
 package Entity;
 
-public class OrderProductTracking {
+public class OrderProductTracking extends Base{
 
 	private ProductOrder productOrder;
 	private Followup follorup;

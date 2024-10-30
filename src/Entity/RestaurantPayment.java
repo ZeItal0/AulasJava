@@ -1,6 +1,6 @@
 package Entity;
 
-public class RestaurantPayment {
+public class RestaurantPayment extends Base{
 
 	private restaurant restaurant;
 	private PaymentMethod paymentmethod;

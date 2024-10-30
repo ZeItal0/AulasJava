@@ -1,23 +1,15 @@
 package Entity;
 
-public class Assessment {
+public class Assessment extends Base{
 
-	private int id;
+	
 	private int score;
 	private Order order;
 	
-	public Assessment(int id, int score, Order order) {
-		this.id = id;
+	public Assessment(int score, Order order) {
+		
 		this.score = score;
 		this.order = order;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public int getScore() {
@@ -35,6 +27,7 @@ public class Assessment {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
+	
 	
 	
 }
