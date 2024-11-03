@@ -1,7 +1,10 @@
 package Entity;
 
-public class address extends Base{
-	
+import java.util.ArrayList;
+import java.util.List;
+
+public class Adress extends Base{
+
 	private String road;
 	private String number;
 	private String city;
@@ -10,9 +13,12 @@ public class address extends Base{
 	private int zip_code;
 	private String complement;
 	private String address_type;
+	private List<Restaurant> restaurant = new ArrayList<>();
+	private List<Order> order =  new ArrayList<>();
 	
-	public address(String road, String number, String city, String state, String reference_point, int zip_code,
-			String complement, String address_type) {
+	public Adress(String road, String number, String city, String state, String reference_point, int zip_code,
+			String complement, String address_type, List<Restaurant> restaurant, List<Order> order) {
+
 		this.road = road;
 		this.number = number;
 		this.city = city;
@@ -21,6 +27,8 @@ public class address extends Base{
 		this.zip_code = zip_code;
 		this.complement = complement;
 		this.address_type = address_type;
+		this.restaurant = restaurant;
+		this.order = order;
 	}
 
 	public String getRoad() {
@@ -86,7 +94,29 @@ public class address extends Base{
 	public void setAddress_type(String address_type) {
 		this.address_type = address_type;
 	}
-	
-	
 
+	public List<Restaurant> getRestaurant() {
+		return restaurant;
+	}
+
+	public void setRestaurant(List<Restaurant> restaurant) {
+		this.restaurant = restaurant;
+	}
+
+	public List<Order> getOrder() {
+		return order;
+	}
+
+	public void setOrder(List<Order> order) {
+		this.order = order;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

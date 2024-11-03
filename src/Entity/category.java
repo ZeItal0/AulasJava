@@ -1,17 +1,20 @@
 package Entity;
 
-public class category extends Base{
-	
+import java.util.ArrayList;
+import java.util.List;
+
+public class Category extends Base{
 
 	private String name;
 	private String description;
 	private String type_category;
+	private List<Restaurant> restaurant = new ArrayList<>();
 	
-	public category(String name, String description, String type_category) {
-		
+	public Category(String name, String description, String type_category, List<Restaurant> restaurant) {
 		this.name = name;
 		this.description = description;
 		this.type_category = type_category;
+		this.restaurant = restaurant;
 	}
 
 	public String getName() {
@@ -37,13 +40,16 @@ public class category extends Base{
 	public void setType_category(String type_category) {
 		this.type_category = type_category;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 
+	public List<Restaurant> getRestaurant() {
+		return restaurant;
+	}
+
+	public void setRestaurant(List<Restaurant> restaurant) {
+		this.restaurant = restaurant;
+	}
+	
+	
+	
+	
 }

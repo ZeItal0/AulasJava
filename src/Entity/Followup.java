@@ -1,25 +1,23 @@
 package Entity;
 
-public class Followup extends Base{
+public class FollowUp extends Base{
 	
-	
-	private String nome;
+	private String name;
 	private String description;
 	private float value;
 	
-	public Followup(String nome, String description, float value) {
-		
-		this.nome = nome;
+	public FollowUp(String name, String description, float value) {
+		this.name = name;
 		this.description = description;
 		this.value = value;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getDescription() {
@@ -41,6 +39,4 @@ public class Followup extends Base{
 	
 	
 	
-	
-
 }

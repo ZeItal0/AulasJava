@@ -4,13 +4,11 @@ import java.util.Date;
 
 public class PaymentHistory extends Base{
 
-	
 	private Date payment_date;
 	private PaymentMethod paymentMethod;
 	private float value;
 	
 	public PaymentHistory(Date payment_date, PaymentMethod paymentMethod, float value) {
-		
 		this.payment_date = payment_date;
 		this.paymentMethod = paymentMethod;
 		this.value = value;
@@ -39,7 +37,6 @@ public class PaymentHistory extends Base{
 	public void setValue(float value) {
 		this.value = value;
 	}
-	
 	
 	
 	

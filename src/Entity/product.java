@@ -1,27 +1,28 @@
 package Entity;
 
-public class product extends Base{
+import java.util.ArrayList;
+import java.util.List;
 
+public class Product extends Base{
 	
-	private String nome;
+	private String name;
 	private float price;
-	private category category;
-	private restaurant restaurant;
+	private Restaurant restaurant;
+	private List<ProductOrder> ProductOrder =  new ArrayList<>();
 	
-	public product(String nome, float price, Entity.category category, Entity.restaurant restaurant) {
-		
-		this.nome = nome;
+	public Product(String name, float price, Restaurant restaurant, List<Entity.ProductOrder> productOrder) {
+		this.name = name;
 		this.price = price;
-		this.category = category;
 		this.restaurant = restaurant;
+		ProductOrder = productOrder;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public float getPrice() {
@@ -32,22 +33,24 @@ public class product extends Base{
 		this.price = price;
 	}
 
-	public category getCategory() {
-		return category;
-	}
-
-	public void setCategory(category category) {
-		this.category = category;
-	}
-
-	public restaurant getRestaurant() {
+	public Restaurant getRestaurant() {
 		return restaurant;
 	}
 
-	public void setRestaurant(restaurant restaurant) {
+	public void setRestaurant(Restaurant restaurant) {
 		this.restaurant = restaurant;
+	}
+
+	public List<ProductOrder> getProductOrder() {
+		return ProductOrder;
+	}
+
+	public void setProductOrder(List<ProductOrder> productOrder) {
+		ProductOrder = productOrder;
 	}
 	
 	
 	
+	
+
 }

@@ -1,32 +1,37 @@
 package Entity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Order extends Base{
-
 	
 	private Date order_date;
 	private float value;
 	private float delivery_fee;
 	private Promotion promotion;
 	private PaymentMethod paymentMethod;
-	private String observations;
+	private String observation;
 	private float change;
-	private DeliveryStatus deliveryStatus;
-	private address address;
+	private Adress adress;
+	private List<DeliveryHistory> DeliveryHistory =  new ArrayList<>();
+	private List<Assessment> Assessment =  new ArrayList<>();
+	private List<ProductOrder> ProductOrder =  new ArrayList<>();
 	
 	public Order(Date order_date, float value, float delivery_fee, Promotion promotion, PaymentMethod paymentMethod,
-			String observations, float change, DeliveryStatus deliveryStatus, Entity.address address) {
-	
+			String observation, float change, Adress adress, List<Entity.DeliveryHistory> deliveryHistory,
+			List<Entity.Assessment> assessment, List<Entity.ProductOrder> productOrder) {
 		this.order_date = order_date;
 		this.value = value;
 		this.delivery_fee = delivery_fee;
 		this.promotion = promotion;
 		this.paymentMethod = paymentMethod;
-		this.observations = observations;
+		this.observation = observation;
 		this.change = change;
-		this.deliveryStatus = deliveryStatus;
-		this.address = address;
+		this.adress = adress;
+		DeliveryHistory = deliveryHistory;
+		Assessment = assessment;
+		ProductOrder = productOrder;
 	}
 
 	public Date getOrder_date() {
@@ -69,12 +74,12 @@ public class Order extends Base{
 		this.paymentMethod = paymentMethod;
 	}
 
-	public String getObservations() {
-		return observations;
+	public String getObservation() {
+		return observation;
 	}
 
-	public void setObservations(String observations) {
-		this.observations = observations;
+	public void setObservation(String observation) {
+		this.observation = observation;
 	}
 
 	public float getChange() {
@@ -85,23 +90,40 @@ public class Order extends Base{
 		this.change = change;
 	}
 
-	public DeliveryStatus getDeliveryStatus() {
-		return deliveryStatus;
+	public Adress getAdress() {
+		return adress;
 	}
 
-	public void setDeliveryStatus(DeliveryStatus deliveryStatus) {
-		this.deliveryStatus = deliveryStatus;
+	public void setAdress(Adress adress) {
+		this.adress = adress;
 	}
 
-	public address getAddress() {
-		return address;
+	public List<DeliveryHistory> getDeliveryHistory() {
+		return DeliveryHistory;
 	}
 
-	public void setAddress(address address) {
-		this.address = address;
+	public void setDeliveryHistory(List<DeliveryHistory> deliveryHistory) {
+		DeliveryHistory = deliveryHistory;
+	}
+
+	public List<Assessment> getAssessment() {
+		return Assessment;
+	}
+
+	public void setAssessment(List<Assessment> assessment) {
+		Assessment = assessment;
+	}
+
+	public List<ProductOrder> getProductOrder() {
+		return ProductOrder;
+	}
+
+	public void setProductOrder(List<ProductOrder> productOrder) {
+		ProductOrder = productOrder;
 	}
 	
 	
 	
 	
+
 }

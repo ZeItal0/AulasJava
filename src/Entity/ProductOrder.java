@@ -2,13 +2,11 @@ package Entity;
 
 public class ProductOrder extends Base{
 
-	
 	private Order order;
-	private product product;
+	private Product product;
 	private int amount;
 	
-	public ProductOrder(Order order, Entity.product product, int amount) {
-		
+	public ProductOrder(Order order, Product product, int amount) {
 		this.order = order;
 		this.product = product;
 		this.amount = amount;
@@ -22,11 +20,11 @@ public class ProductOrder extends Base{
 		this.order = order;
 	}
 
-	public product getProduct() {
+	public Product getProduct() {
 		return product;
 	}
 
-	public void setProduct(product product) {
+	public void setProduct(Product product) {
 		this.product = product;
 	}
 
@@ -37,10 +35,6 @@ public class ProductOrder extends Base{
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-	
-	
-	
-	
 	
 	
 	

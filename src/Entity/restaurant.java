@@ -1,28 +1,30 @@
 package Entity;
 
-import java.sql.Time;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Timer;
 
-public class restaurant extends Base {
-	
-	
+public class Restaurant extends Base{
+
 	private String name;
 	private String telephone;
-	private Time opening_hours;
-	private address address;
-	private category category;
-	private boolean is_withdrawn;
-	private float minimumdelivery_value;
+	private Timer opening_hours;
+	private Adress adress;
+	private Category category;
+	private boolean is_withdraw;
+	private float minimum_delivery_value;
+	private List<Product> product = new ArrayList<>();
 	
-	public restaurant(String name, String telephone, Time opening_hours, Entity.address address,
-			Entity.category category, boolean is_withdrawn, float minimumdelivery_value) {
-	
+	public Restaurant(String name, String telephone, Timer opening_hours, Adress adress, Category category,
+			boolean is_withdraw, float minimum_delivery_value, List<Product> product) {
 		this.name = name;
 		this.telephone = telephone;
 		this.opening_hours = opening_hours;
-		this.address = address;
+		this.adress = adress;
 		this.category = category;
-		this.is_withdrawn = is_withdrawn;
-		this.minimumdelivery_value = minimumdelivery_value;
+		this.is_withdraw = is_withdraw;
+		this.minimum_delivery_value = minimum_delivery_value;
+		this.product = product;
 	}
 
 	public String getName() {
@@ -41,45 +43,55 @@ public class restaurant extends Base {
 		this.telephone = telephone;
 	}
 
-	public Time getOpening_hours() {
+	public Timer getOpening_hours() {
 		return opening_hours;
 	}
 
-	public void setOpening_hours(Time opening_hours) {
+	public void setOpening_hours(Timer opening_hours) {
 		this.opening_hours = opening_hours;
 	}
 
-	public address getAddress() {
-		return address;
+	public Adress getAdress() {
+		return adress;
 	}
 
-	public void setAddress(address address) {
-		this.address = address;
+	public void setAdress(Adress adress) {
+		this.adress = adress;
 	}
 
-	public category getCategory() {
+	public Category getCategory() {
 		return category;
 	}
 
-	public void setCategory(category category) {
+	public void setCategory(Category category) {
 		this.category = category;
 	}
 
-	public boolean isIs_withdrawn() {
-		return is_withdrawn;
+	public boolean isIs_withdraw() {
+		return is_withdraw;
 	}
 
-	public void setIs_withdrawn(boolean is_withdrawn) {
-		this.is_withdrawn = is_withdrawn;
+	public void setIs_withdraw(boolean is_withdraw) {
+		this.is_withdraw = is_withdraw;
 	}
 
-	public float getMinimumdelivery_value() {
-		return minimumdelivery_value;
+	public float getMinimum_delivery_value() {
+		return minimum_delivery_value;
 	}
 
-	public void setMinimumdelivery_value(float minimumdelivery_value) {
-		this.minimumdelivery_value = minimumdelivery_value;
+	public void setMinimum_delivery_value(float minimum_delivery_value) {
+		this.minimum_delivery_value = minimum_delivery_value;
 	}
+
+	public List<Product> getProduct() {
+		return product;
+	}
+
+	public void setProduct(List<Product> product) {
+		this.product = product;
+	}
+	
+	
 	
 	
 	
