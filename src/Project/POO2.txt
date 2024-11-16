@@ -1,0 +1,46 @@
+Data das apresentações 2 e 9
+
+no projeto individual deve ter:
+    [
+        - Todos os assuntos vistos em sala
+        - Conexão com Bando de dados Ou Salvos em ArrayList
+        - Consulta de api VIA CEP
+        - todo o fluxo em visual (JoptionPane ou Scanner)
+    ]
+    Funcionamento do projeto:
+    [ - Listagem vindo do banco de dados dos restaurantes,
+      - Seleciono o 1 dos restaurantes listados,
+      - Listagem dos produtos do restaurante selecionado,
+      - Selecionar o produto,
+      - Listagem de adicionais desse produto,
+      - Selecionar o adicional
+      - escolher se quero adicionar mais produtos ao pedido
+      - Listagem do meu pedido completo
+      - Cadastrar endereço de entrega
+      - quero digitar meu cep e exibir em tela meu endereço
+      - adicionar ao endereço o numero
+      - Listar formas de pagamento
+      - Selecionar forma de pagamento
+      - Finalizar Pedido
+      - threads para atualizar status do pedido [ produção, saiu para entrega e entregue ]
+      - Listar meus pedidos já realizados
+    ]
+
+As funcionalidades listadas acima devem todas serem salvas em banco de dados,
+Fluxo totalmente visual
+“A quem muito foi dado, muito será cobrado” -> Quem apresentar na segunda semana terá que explicar melhor o projeto
+Cada aluno terá 15 minutos para apresentação individual,
+começamos as 19:00 em ponto
+Cada um leva seu notebook ou roda seu projeto no computador da faculdade
+Se as 19h a gente começar e ninguem se atrasar, e aconteça de não dar tempo, a apresentação será online
+AGORA, se chegar na faculdade e ficar todos do lado de fora sem querer começar a apresentação e acabar a hora, que não conseguiu vai fazer 2 chamada.
+façam de tudo para apresentar os projetos e não ir para segunda chamada.
+Commits até as 19h do seu dia da apresentação, Commits feitos após essa data não vai ser aceito.
+
+Pontuação [
+    2 Pontos para as tasks
+    3 Pontos para apresentação
+    2 Pontos para o código
+    1 Ponto para integração com VIA CEP
+    2 Ponto para conexão com bando de dados
+]

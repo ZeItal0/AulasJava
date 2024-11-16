@@ -1,0 +1,15 @@
+Java {
+    04/11 -> Exception e serializede
+    11/11 -> COEPE
+    18/11 -> API E CONEXÃO COM O BANCO
+    25/11 -> Revisão de Projetos
+    02 e 09/12 -> Apresentação de projetos
+}
+
+Banco {
+    06/11 -> Inner Join
+    13/11 -> COEPE
+    20/11 -> FERIADO
+    27/11 -> Inner Join / transaction / Gatilhos
+    04 e 11/12 -> Apresentação de projetos
+}

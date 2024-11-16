@@ -1,0 +1,50 @@
+Data das apresentações [ 4 e 11 ]
+- Apresentação deve ter
+[
+    - Primeiramente Banco de dados limpo sem tabelas criadas
+    - Script(arquivo completo de sql) para gerar todas as tabelas e inserts do projeto Ifood
+    - Inner Joins e consultas de Relacionamentos para relatorio de
+        [
+            - Produto que mais vendeu,
+            - produto que menos vendeu,
+            - qual acompanhamento foi mais usado em produto
+            - Qual mes do ano mas teve venda
+            - qual a forma de pagamento mais usado
+            - Qual o endereço que mais teve entrega
+            - Qual venda teve mais produtos
+            - Venda do mes atual por pagamento
+            - Venda do mes anterior por pagamento
+        ]
+
+    - Projeto deve ter todas as tabelas mapeadas na sala
+    - todas as tabelas devem ter mínimo de 10 insert (excerto consultas tipo forma de pagamento...)
+    - Preciso de 15 relacionamentos de tabelas condizentes com a realidade
+    - Projeto deve ter todas as operações de um crud
+    - para pedidos, preciso que todos os meses do ano tenha no mínimo 10 pedidos mês.
+
+        “A quem muito foi dado, muito será cobrado”
+        Quem apresentar no dia 11 terá que implementar uma dos Inner Joins ou consultas acima na hora.
+    ]
+
+    Cada aluno terá 15 minutos para apresentação individual,
+    começamos as 19:00 em ponto
+    Cada um leva seu notebook ou roda seu projeto no computador da faculdade
+    Se as 19h a gente começar e ninguem se atrasar, e aconteça de não dar tempo, a apresentação será online
+    AGORA, se chegar na faculdade e ficar todos do lado de fora sem querer começar a apresentação e acabar a hora, que não conseguiu vai fazer 2 chamada.
+    façam de tudo para apresentar os projetos e não ir para segunda chamada.
+    Quem vai apresentar na primeira semana, pode escolher algum dos relacionamentos de tabelas acima para fazer na hora
+    Quem apresenta na segunda semana, Escolhe um e o outro é escolhido na hora.
+    Commits até as 19h do seu dia da apresentação, Commits feitos após essa data não vai ser aceito.
+
+    Pontuação [
+        Task: 2 pontos
+        Projeto: 3 pontos
+        Código feito na hora: 3 pontos
+        Apresentação do conteúdo: 2 pontos
+    ]
+]
+
+
+
+
+
