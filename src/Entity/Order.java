@@ -17,10 +17,11 @@ public class Order extends Base{
 	private List<DeliveryHistory> DeliveryHistory =  new ArrayList<>();
 	private List<Assessment> Assessment =  new ArrayList<>();
 	private List<ProductOrder> ProductOrder =  new ArrayList<>();
+	private DeliveryStatus deliveryStatus;
 	
 	public Order(Date order_date, float value, float delivery_fee, Promotion promotion, PaymentMethod paymentMethod,
 			String observation, float change, Adress adress, List<Entity.DeliveryHistory> deliveryHistory,
-			List<Entity.Assessment> assessment, List<Entity.ProductOrder> productOrder) {
+			List<Entity.Assessment> assessment, List<Entity.ProductOrder> productOrder, DeliveryStatus deliveryStatus) {
 		this.order_date = order_date;
 		this.value = value;
 		this.delivery_fee = delivery_fee;
@@ -32,6 +33,7 @@ public class Order extends Base{
 		DeliveryHistory = deliveryHistory;
 		Assessment = assessment;
 		ProductOrder = productOrder;
+		this.deliveryStatus = deliveryStatus;
 	}
 
 	public Date getOrder_date() {
@@ -120,6 +122,14 @@ public class Order extends Base{
 
 	public void setProductOrder(List<ProductOrder> productOrder) {
 		ProductOrder = productOrder;
+	}
+
+	public DeliveryStatus getDeliveryStatus() {
+		return deliveryStatus;
+	}
+
+	public void setDeliveryStatus(DeliveryStatus deliveryStatus) {
+		this.deliveryStatus = deliveryStatus;
 	}
 	
 	
