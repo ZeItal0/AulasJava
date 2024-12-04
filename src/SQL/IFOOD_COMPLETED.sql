@@ -588,7 +588,7 @@ count(p.id) as totalDosPedidos,
 month(dataPedido) as mes
 from pedido p
 inner join formaPagamento fp on p.id_forma_pagamento = fp.id
-where month(dataPedido) = month(curdate())
+where month(dataPedido) = month(curdate()) - 1
 group by formadePagamento, mes
 order by totalDosPedidos desc
 limit 1;
