@@ -511,7 +511,6 @@ DELETE FROM historicoDeEntregas WHERE id_status_entrega = 1;
 DELETE FROM historicoDeEntregas WHERE id_pedido = 1;
 DELETE FROM statusEntrega WHERE id = 1;
 DELETE FROM pedido WHERE id = 1;
-DELETE FROM pedido WHERE id_restaurante = 1;
 DELETE FROM produtos WHERE id = 1;
 DELETE FROM acompanhamento WHERE id = 1;
 
